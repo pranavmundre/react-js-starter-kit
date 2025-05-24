@@ -1,4 +1,4 @@
-# 🚀 React Starter Template
+# 🚀 ReactJS Starter Template
 
 This is a reusable React.js project boilerplate with a pre-configured folder structure, routing setup using react-router-dom, and best practices in place. It’s designed to help you quickly bootstrap new React projects without repetitive setup.
 
