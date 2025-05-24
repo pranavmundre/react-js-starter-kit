@@ -24,13 +24,12 @@ jobs:
 
       - name: Check npm version
         run: npm -v
-
-      - name: List install npm package
-        run: npm list --depth=0
-
-
+        
       - name: Install dependencies
         run: npm install
+      
+      - name: List install npm package
+        run: npm list --depth=0
 
       - name: Run tests
         run: npm test -- --watchAll=false
