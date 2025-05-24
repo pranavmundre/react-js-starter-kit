@@ -14,7 +14,7 @@ This is a reusable React.js project boilerplate with a pre-configured folder str
 🛠 Easily customizable for different use cases
 
 ## 📂 Folder Structure
-
+```
 src/
 ├── api
 ├── auth
@@ -28,7 +28,7 @@ src/
 ├── utils
 ├── App.jsx
 └── main.jsx
-
+```
 ## 📦 Getting Started
 Clone the repo:
 
