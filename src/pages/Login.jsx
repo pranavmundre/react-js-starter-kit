@@ -1,3 +1,4 @@
+import React, { useEffect } from 'react';
 import Navbar from "./layouts/Navbar";
 import { useState } from 'react';
 import axios from 'axios';
@@ -13,6 +14,11 @@ function Login({ setUser }) {
     const [message, setMessage] = useState('');
     const navigate = useNavigate();
     const [isLoading, setLoading] = useState(false);
+
+     useEffect(() => {
+        console.log(process.env.REACT_APP_NAME);
+        document.title = "Login - " + process.env.REACT_APP_NAME;
+    }, []);
 
     const handleLogin = async (e) => {
         e.preventDefault();

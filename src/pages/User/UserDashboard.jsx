@@ -3,7 +3,7 @@ import Navbar from "../layouts/Navbar";
 
 
 
-function UserDashboard(){
+export default function UserDashboard(){
     return (
         <>
             <Navbar/>
@@ -14,5 +14,3 @@ function UserDashboard(){
         </>
     )
 }
-
-export default UserDashboard;
