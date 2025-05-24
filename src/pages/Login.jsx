@@ -1,4 +1,4 @@
-import Navbar from "../layouts/Navbar";
+import Navbar from "./layouts/Navbar";
 import { useState } from 'react';
 import axios from 'axios';
 
