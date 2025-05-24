@@ -2,13 +2,13 @@ import Navbar from "./layouts/Navbar";
 
 
 
-function AboutUs(){
+function ContactUs(){
     return (
         <>
             <Navbar/>
-            AboutUs
+            ContactUs
         </>
     )
 }
 
-export default AboutUs;
+export default ContactUs;

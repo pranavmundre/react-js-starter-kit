@@ -7,11 +7,11 @@ const ProtectedRoute = ({ element: Component, roles, userRole }) => {
     if (!userRole || userRole === 'guest') {
         return <Navigate to="/login" replace />;
     }
-     if ( roles.includes(userRole)) {
+    else if ( roles.includes(userRole)) {
         return <Component />; 
-        // return element; 
     }
     else {
+        // return <Navigate to="/login" />; // or redirect to unauthorized page
         return <Unauthorized/>; 
     }
 //   return <Navigate to="/unauthorized" />; // or redirect to unauthorized page

@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import Navbar from "../../layouts/Navbar";
+import Navbar from "../layouts/Navbar";
 
 
 
-function Home(){
+export default function UserDashboard(){
     return (
         <>
             <Navbar/>
 
-            <Link to="/login" className="btn btn-info">User Dashborad</Link>
+            <div>
+                <h3>User Dashborad</h3>
+            </div>
         </>
     )
 }
-
-export default Home;
