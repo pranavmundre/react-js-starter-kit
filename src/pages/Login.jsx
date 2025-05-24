@@ -16,7 +16,6 @@ function Login({ setUser }) {
     const [isLoading, setLoading] = useState(false);
 
      useEffect(() => {
-        console.log(process.env.REACT_APP_NAME);
         document.title = "Login - " + process.env.REACT_APP_NAME;
     }, []);
 
