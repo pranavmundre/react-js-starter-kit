@@ -31,7 +31,7 @@ function Navbar(){
                         </ul>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link " href="/contact-us" tabindex="-1" aria-disabled="true">Contact Us</a>
+                        <a className="nav-link " href="/contact-us" tabIndex="-1" aria-disabled="true">Contact Us</a>
                         </li>
                     </ul>
                    
