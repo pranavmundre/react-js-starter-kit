@@ -18,6 +18,16 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
+          
+      - name: Check node version
+        run: node --version
+
+      - name: Check npm version
+        run: npm -v
+
+      - name: List install npm package
+        run: npm list --depth=0
+
 
       - name: Install dependencies
         run: npm install
