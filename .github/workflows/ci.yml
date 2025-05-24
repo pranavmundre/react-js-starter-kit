@@ -29,7 +29,7 @@ jobs:
         run: npm install
       
       - name: Downgrade react-router-dom and react
-        run: npm install react@18.2.0 react-dom@18.2.0 react-router-dom@6.22.3
+        run: npm install react@18.2.0 react-dom@18.2.0 react-router-dom@6.22.3 axios@0.27.2
         
       - name: List install npm package
         run: npm list --depth=0
