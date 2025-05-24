@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { publicRoutes, protectedRoutes, componentMap } from './routes/routesConfig';
+import { publicRoutes, protectedRoutes,  } from './routes/routesConfig';
 import ProtectedRoute from './routes/ProtectedRoute';
 import { AuthProvider, useAuth } from './auth/AuthContext';
 import React, { useEffect } from 'react';
@@ -14,26 +14,24 @@ function AppRoutes() {
 
   useEffect(() => {
     document.title = appName;
-  }, []);
+  }, [appName]);
 
   return (
     <Routes>
       {/* Public routes */}
-      {publicRoutes.map(({ path, component }) => {
-        const Component = componentMap[component];
-        return <Route key={path} path={path} element={<Component />} />;
+      {publicRoutes.map(({ Path, Component }) => {
+        return <Route key={Path} path={Path} element={<Component/>} />;
       })}
-
+  
       {/* Protected routes */}
-      {protectedRoutes.map(({ path, component, roles }) => {
-        const Component = componentMap[component];
+      {protectedRoutes.map(({ Path, Component, roles }) => {
         return (
           <Route
-            key={path}
-            path={path}
+            key={Path}
+            path={Path}
             element={
               <ProtectedRoute
-                element={<Component />}
+                element={Component}
                 roles={roles}
                 userRole={userRole}
               />
