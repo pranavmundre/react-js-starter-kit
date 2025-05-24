@@ -1,4 +1,43 @@
-# Getting Started with Create React App
+# 🚀 React Starter Template
+
+This is a reusable React.js project boilerplate with a pre-configured folder structure, routing setup using react-router-dom, and best practices in place. It’s designed to help you quickly bootstrap new React projects without repetitive setup.
+
+## ✨ Features
+🔁 React Router (react-router-dom) preconfigured
+
+📁 Organized folder structure (components, pages, assets, etc.)
+
+🧹 Clean and minimal codebase
+
+✅ Ready for scaling into larger projects
+
+🛠 Easily customizable for different use cases
+
+## 📂 Folder Structure
+
+src/
+├── api
+├── auth
+├── assets/
+├── components/
+├── errors/
+├── layouts/
+├── pages/
+├── routes/
+├── services/
+├── utils
+├── App.jsx
+└── main.jsx
+
+## 📦 Getting Started
+Clone the repo:
+
+git clone https://github.com/pranavmundre/react-starter-kit.git
+cd react-starter-kit
+
+<!-- # Getting Started with Create React App -->
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
